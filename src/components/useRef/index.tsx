@@ -7,11 +7,10 @@ import {
 
 export const UseRefExample: React.ElementType = () => {
   const inputRef = useRef<HTMLInputElement>(null);
-  const backgroundRef = useRef<HTMLDivElement>(null);
 
   return (
     <Container>
-      <Infos ref={backgroundRef}>
+      <Infos>
         <p>Clique no botão para adicionar uma string no input</p>
         <input type="text" ref={inputRef} />
         <button onClick={() => {
